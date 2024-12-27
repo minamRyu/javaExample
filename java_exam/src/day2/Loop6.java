@@ -14,20 +14,17 @@ public class Loop6 {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("숫자를 입력하세요 : ");
 		int num = scan.nextInt();
-		int sum1 = 0;
-		int sum2 = 0;
+		int oddSum = 0;
+		int evenSum = 0;
 		for(int i=0; i<=num; i++) {
 			if(i%2 == 1) {
-				sum1 += i;				
+				oddSum += i;				
 			} else {
-				sum2 += i;
+				evenSum += i;
 			}
-		}
-		
-		System.out.println("홀수들의 합 : " + sum1);
-		System.out.println("짝수들의 합 : " + sum2);
-		
-
+		}		
+		System.out.println("홀수들의 합 : " + oddSum);
+		System.out.println("짝수들의 합 : " + evenSum);	
 	}
 
 }
