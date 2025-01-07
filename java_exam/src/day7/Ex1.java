@@ -6,5 +6,4 @@ public class Ex1 {
 	static void printNum() {
 		System.out.println(num2);
 	}
-
 }

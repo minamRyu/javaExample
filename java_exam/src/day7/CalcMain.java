@@ -6,12 +6,17 @@ public class CalcMain {
 		// TODO Auto-generated method stub
 		Calculator calc = new Calculator();
 		calc.intro();
+		
 		int sum = calc.sum(5, 10);
 		System.out.println(sum);
-		sum = calc.sum(5.3, 3.3);
+		sum = calc.sum(300, 1500);
+		System.out.println(sum);
+		sum = calc.sum(5.3, 3.1);
 		System.out.println(sum);
 		sum = calc.sum(10, 20, 30.5);
-		System.out.println(sum);
+		System.out.println(sum); // 60
+		
+		
 		
 	}
 }

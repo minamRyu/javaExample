@@ -1,14 +1,13 @@
 package day7;
 
 public class Human {
-	private String name;
+	String name;
 	private int age;
 	private String addr;
+	int money = 50000;
+	static int money_708 = 200000; 
 	
-	static int money_708 = 200000;
-	
-	
-	Human (String name, int age, String addr) { // 생성자
+	Human(String name, int age, String addr){
 		this.name = name;
 		this.age = age;
 		this.addr = addr;
@@ -18,7 +17,8 @@ public class Human {
 	// "ooo의 나이는 oo, 주소는 ooo 입니다." 출력
 	void intro() {
 		System.out.println(
-			name + "의 나이는" + age + ", 주소는 " + addr + "입니다.");
+			name + "의 나이는 " + age + ", "
+			+ "주소는 " + addr + " 입니다.");
 	}
 
 	public String getName() {
@@ -40,7 +40,7 @@ public class Human {
 			this.age = age;
 			System.out.println("나이가 " + age + "이(가) 되었습니다.");
 		}
-		this.age = age;
+		
 	}
 
 	public String getAddr() {
