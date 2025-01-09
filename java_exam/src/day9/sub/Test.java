@@ -14,16 +14,17 @@ public class Test {
 		increase(n);
 		System.out.println(n);
 		
-		Circle c = new Circle(50);
-		increase(c);
-		System.out.println(c.radius);
+		Circle c1 = new Circle(50);
+		increase(c1);
+		System.out.println(c1.radius);
 		
 		Circle c2 = new Circle(20);
-		c.radius = 30;
+		c2.radius = 30;
 		System.out.println(c2.radius);
 		
 		Circle c3 = c2;
 		c3.radius = 100;
+		increase(c3);
 		System.out.println(c2.radius);
 	}
 	// 위의 결과값 n은 30
