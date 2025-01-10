@@ -32,16 +32,17 @@ public class Car_Test {
 		this.speed = speed;
 	}
 	
-	public int getSpeed() {
-		return speed;
+	public void speedDown(int speed) {
+		if(speed > 0) {
+			this.speed -= speed;
+		} else {
+			System.out.println("0 미만의 속도는 불가합니다. 0으로 변경됩니다.");
+			this.speed = speed;
+		}
 	}
 	
-	public void speedDown(int speed) {
-		this.speed = speed;
-		if(speed <= 0) {
-			System.out.println("0 미만의 속도는 불가합니다. 0으로 변경됩니다.");
-		}
-		this.speed = speed;
+	public int getSpeed() {
+		return speed;
 	}
 
 }

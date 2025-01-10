@@ -19,6 +19,6 @@ public class Dog extends Animal{
 	}
 	
 	public String getBreed() {
-		return this.breed = "진돗개";  // 클래스 깃 참조
+		return breed;  
 	}
 }
