@@ -42,6 +42,7 @@ public class HumanList {
 				for(int j=0; j<list.size(); j++) {
 					if(delName.equals(list.get(j).get("name"))) {
 						list.remove(j);
+						deleteFlg = true;
 						break;
 					}
 				} 
