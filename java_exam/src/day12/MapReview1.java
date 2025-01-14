@@ -15,7 +15,7 @@ public class MapReview1 {
 		
 		System.out.print("과목 : ");
 		String subject = scan.next();
-		if(map.containsKey(subject)) {
+		if(map.containsKey(subject)) { // containsKey 키가 존재하는지 검색
 			System.out.print("새 점수 : ");
 			int score = scan.nextInt();
 			map.put(subject, score);
