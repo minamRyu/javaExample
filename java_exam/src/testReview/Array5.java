@@ -1,4 +1,4 @@
-package day06;
+package testReview;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -15,7 +15,7 @@ public class Array5 {
 		Scanner scan = new Scanner(System.in);
 		Random ran = new Random();
 		
-		int arr[][] = new int[3][3];
+		int arr[][] = new int[3][4];
 		// 내가 푼거
 //		int sum = 0;
 //		int total = 0;
@@ -25,8 +25,8 @@ public class Array5 {
 //				sum += arr[i][j];
 //			}
 //			System.out.println(Arrays.toString(arr[i]));
-//			total = (arr.length)*(arr[i].length);
 //		}
+//		total = (arr.length)*(arr[0].length);
 //		System.out.println("평균값 : " + sum/total);
 		
 		// 예제 풀이
