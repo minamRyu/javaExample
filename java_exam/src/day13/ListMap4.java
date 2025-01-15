@@ -15,7 +15,29 @@ public class ListMap4 {
 			}
 			System.out.println(min + "~" + max + " 값을 입력해주세요.");
 		}
+		
+		// 100~100000
+//		while(true) {
+//			System.out.print("가격 : ");
+//			int price = scan.nextInt();
+//			if(price >= 100 && price <= 100000) {
+//				map.put("price", price);
+//				break;
+//			}
+//			System.out.println("100~100000 값을 입력해주세요.");
+//		}
+//		// 1~300
+//		while(true) {
+//			System.out.print("개수 : ");
+//			int num = scan.nextInt();
+//			if(num >= 1 && num <= 300) {
+//				map.put("num", num);
+//				break;
+//			}
+//			System.out.println("1~300 값을 입력해주세요.");
+//		}
 	}
+	
 	public static HashMap<String, Object> selectFruit(ArrayList<HashMap<String, Object>> list, String name) {
 		for(int i=0; i<list.size(); i++) {
 			if(name.equals(list.get(i).get("name"))) {
@@ -24,6 +46,7 @@ public class ListMap4 {
 		}
 		return null;
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<HashMap<String, Object>> list = new ArrayList<>();

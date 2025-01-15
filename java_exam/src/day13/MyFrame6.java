@@ -48,7 +48,6 @@ class MyEvent implements ActionListener{ // ActionListener는 인터페이스이
 		} else {
 			btn.setText("Action");
 		}
-	}
-	
+	}	
 }
 
