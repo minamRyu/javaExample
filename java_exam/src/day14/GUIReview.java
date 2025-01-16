@@ -13,8 +13,8 @@ public class GUIReview extends JFrame{
 	
 	public GUIReview() {
 		setTitle("랜덤 버튼 배치");
-		
 		Container c = getContentPane();
+		
 		c.setBackground(Color.gray);
 		c.setLayout(null);
 		Random ran = new Random();
