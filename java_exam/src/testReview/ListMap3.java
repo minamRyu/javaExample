@@ -107,6 +107,7 @@ public class ListMap3 {
 				break;
 			} else {
 				// 다시시도
+				continue;
 			}
 		}
 	}

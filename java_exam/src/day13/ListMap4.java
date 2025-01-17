@@ -68,9 +68,12 @@ public class ListMap4 {
 				map.put("name", name);
 				
 				HashMap<String, Object> fruit = selectFruit(list, name);
+//				boolean updateFlag = false;
 				if(fruit != null) {
 					int num = setNumber("개수", 1, 300 - (int) fruit.get("num"));
 					fruit.put("num", (int) fruit.get("num") + num);
+//					updateFlag = true;
+					break;
 				} else {
 					int price = setNumber("가격", 100, 100000);
 					map.put("price", price);
