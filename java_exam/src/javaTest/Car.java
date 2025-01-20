@@ -37,7 +37,7 @@ public class Car {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "차 종류는 " + kind + "," + "색은 " + color + " 입니다.";
+		return "차 종류는 " + kind + ", " + "색은 " + color + " 입니다.";
 	}
 
 }

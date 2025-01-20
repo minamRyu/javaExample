@@ -21,6 +21,9 @@ public class RadioButtonEx extends JFrame{
 		gender.add(radio1);
 		gender.add(radio2);
 		
+		c.add(radio1);
+		c.add(radio2);
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 아래 3줄은 필수로 설정
 		setSize(300, 300);
 		setVisible(true);
