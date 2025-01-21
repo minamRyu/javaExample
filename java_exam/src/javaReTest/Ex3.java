@@ -23,11 +23,16 @@ public class Ex3 {
 			boolean numCheck = false;
 			if(num>0 && num<=100){
 				for(int j=0; j<i; j++) {
-					if(arr1[j] != num) {
-						
-					}
+					if(arr1[j] == num) {
+						numCheck = true;
+						System.out.println("다른 숫자를 넣으세요!");
+						i--;
+						break;
+					} 
 				}
-				arr1[i] = num;
+				if(!numCheck) {
+					arr1[i] = num;
+				}
 			} else {
 				System.out.println("100 이하의 숫자를 넣으세요!");
 				i--;
