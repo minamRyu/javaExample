@@ -31,14 +31,48 @@ public class Review_ListMap2 {
 			list.add(map);
 		}
 		System.out.println(list);
+		System.out.println("=================");
 		
 		// 수정할 사용자 입력 : 홍길동
 		// 리스트안의 맵에 홍길동 있으면 -> 주소 수정할 수 있게
 		// 없으면 -> 없는 사용자 입니다.
+		System.out.print("수정할 사용자 입력 : ");
+		String name = scan.next();
+		boolean nameCheck = false;
 		for(int j=0; j<list.size(); j++) {
-			System.out.println(list.get(j));
+			HashMap<String, Object> map = list.get(j);
+			if(map.get("name").equals(name)) {
+				System.out.print("주소 : ");
+				String addr = scan.next();
+				map.put("addr", addr);
+//				list.add(map);  따로 추가할 필요 없다
+				nameCheck = true;
+				break;
+			}
+		}	
+		if(!nameCheck) {
+			System.out.println("없는 사용자 입니다.");	
 		}
-		
-		
+		System.out.println(list);
+		System.out.println("=================");
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

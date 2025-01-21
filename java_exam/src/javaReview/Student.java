@@ -32,4 +32,17 @@ public class Student extends Person{
 		return map;
 	}
 	
+//	void temp() {
+//		for(int i=0; i<100; i++) {
+//			if(i>50) {
+//				return; // return을 만나는 순간 메서드를 빠져나간다
+////				break;  // break는 반복문만 빠져나간다
+//			}
+//			System.out.println(i);
+//		}
+//		System.out.println("test1");
+//		System.out.println("test2");
+//		System.out.println("test3");
+//	}
+	
 }

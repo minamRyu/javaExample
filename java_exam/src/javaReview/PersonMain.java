@@ -23,5 +23,8 @@ public class PersonMain {
 		HashMap<String, Object> map = kim.getInfo();
 		System.out.println(map.get("stuNo"));
 		System.out.println(map.get("grade"));
+		
+//		kim.temp();
+		
 	}
 }
