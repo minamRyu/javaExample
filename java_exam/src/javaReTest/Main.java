@@ -28,7 +28,5 @@ public class Main {
 		for(int i=0; i<subjectList.size(); i++) {
 			System.out.println(subjectList.get(i));
 		}
-
 	}
-
 }

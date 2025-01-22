@@ -4,7 +4,7 @@ public class Human {
 	
 	private String name;
 	private int age;
-	private String phone;
+//	private String phone;
 	
 	public Human(String name, int age) {
 		// TODO Auto-generated constructor stub

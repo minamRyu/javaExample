@@ -17,41 +17,78 @@ public class Ex3 {
 		
 		int arr1[] = new int[6];
 		int arr2[] = new int[6];
+//		for(int i=0; i<arr1.length; i++) {
+//			System.out.print((i+1) + "번째 숫자를 넣으세요 : ");
+//			int num = scan.nextInt();
+//			boolean numCheck = false;
+//			if(num>0 && num<=100){
+//				for(int j=0; j<i; j++) {
+//					if(arr1[j] == num) {
+//						numCheck = true;
+//						System.out.println("다른 숫자를 넣으세요!");
+//						i--;
+//						break;
+//					} 
+//				}
+//				if(!numCheck) {
+//					arr1[i] = num;
+//				}
+//			} else {
+//				System.out.println("100 이하의 숫자를 넣으세요!");
+//				i--;
+//			}
+//		}
+//		System.out.println(Arrays.toString(arr1));
+//		
+//		for(int i=0; i<arr1.length; i++) {
+//			int maxIndex = i;
+//			for(int j=i+1; j<arr1.length; j++) {
+//				if(arr1[j] > arr1[maxIndex]) {
+//					maxIndex = j;
+//				}
+//			}
+//			int temp = arr1[maxIndex];
+//			arr1[maxIndex] = arr1[i];
+//			arr1[i] = temp;
+//			arr2[i] = temp;
+//		}
+//		System.out.println(Arrays.toString(arr2));
+		
+//		아래와 같이 간단하게 작성!!
+//		int arr1[] = new int[6];
+//		for(int i=0; i<arr1.length; i++) {
+//			System.out.print((i+1) + "번째 숫자를 넣으세요 : ");
+//			arr1[i] = scan.nextInt();
+//			for(int j=0; j<i; j++) {
+//				if(arr1[j] == arr1[i]) {
+//					System.out.println("다른 숫자를 넣으세요!");
+//					i--;
+//					break;
+//				} 
+//			}
+//		}
+//		System.out.println(Arrays.toString(arr1));
 		for(int i=0; i<arr1.length; i++) {
-			System.out.print("숫자를 넣으세요 : ");
-			int num = scan.nextInt();
-			boolean numCheck = false;
-			if(num>0 && num<=100){
-				for(int j=0; j<i; j++) {
-					if(arr1[j] == num) {
-						numCheck = true;
-						System.out.println("다른 숫자를 넣으세요!");
-						i--;
+			while(true) {
+				System.out.print((i+1) + "번째 숫자를 넣으세요 : ");
+				int input = scan.nextInt();
+				if(input>100 || input<1) {
+					System.out.println("1~100 사이의 값을 넣으세요");
+				} else {
+					boolean inputFlg = false;
+					for(int j=0; j<i; j++) {
+						if(input == arr1[j]) {
+							System.out.println("중복된 값있음. 다시 입력");
+							inputFlg = true;
+						}
+					}
+					if(inputFlg == false) {
+						arr1[i] = input;
 						break;
-					} 
+					}
 				}
-				if(!numCheck) {
-					arr1[i] = num;
-				}
-			} else {
-				System.out.println("100 이하의 숫자를 넣으세요!");
-				i--;
 			}
 		}
 		System.out.println(Arrays.toString(arr1));
-		
-		for(int i=0; i<arr1.length; i++) {
-			int maxIndex = i;
-			for(int j=i+1; j<arr1.length; j++) {
-				if(arr1[j] > arr1[maxIndex]) {
-					maxIndex = j;
-				}
-			}
-			int temp = arr1[maxIndex];
-			arr1[maxIndex] = arr1[i];
-			arr1[i] = temp;
-			arr2[i] = temp;
-		}
-		System.out.println(Arrays.toString(arr2));
 	}
 }
