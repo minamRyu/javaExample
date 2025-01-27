@@ -193,7 +193,7 @@ public class JavaReviewTest2 {
 //			다음 코드를 실행한 결과는?
 //			A x = new D();
 //			System.out.println(x instanceof B);		<= true
-//			System.out.println(x instanceof C);		<= true
+//			System.out.println(x instanceof C);		<= false
 //			
 //			
 //			11. 다형성에 대한 설명 중 틀린 것은?
